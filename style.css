@@ -1,0 +1,196 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and HTML Styling */
+html {
+  font-size: 62.5%; /* For easier rem calculations */
+  text-align: center;
+  font-family: sans-serif;
+  background-image: linear-gradient(to right bottom, #f4f6f7, #ecf0f1);
+}
+header {
+  font-size: 2rem;
+}
+body {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* General Links */
+a {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:focus {
+  outline: 2px solid #1098ad;
+  outline-offset: 2px;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: #1098ad;
+  margin-bottom: 1.5rem;
+}
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Buttons */
+button {
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #1098ad;
+  background-color: transparent;
+  border: 0.2rem solid #1098ad;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  color: white;
+  background-color: #1098ad;
+}
+button:focus {
+  outline: 2px solid #1098ad;
+}
+
+/* Price Styling */
+.price {
+  font-family: monospace;
+  font-size: 2rem;
+  color: #1098ad;
+  margin-top: 2rem;
+}
+.price:hover {
+  text-decoration: dashed;
+  font-size: 2.5rem;
+}
+
+/* Product Section */
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-image: url("mohammad-alizade-XgeZu2jBaVI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+}
+
+/* Individual Product */
+.product {
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: 300px;
+  background-color: white;
+  border: 0.2rem solid #1098ad;
+  padding: 1.7rem;
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.product:hover {
+  transform: scale(1.05);
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.label {
+  font-size: 1.5rem;
+  color: #1098ad;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #1098ad;
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Lists */
+li {
+  font-size: 1.2rem;
+  color: #005564;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  list-style: square;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .product {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  footer {
+    font-size: 1.5rem;
+  }
+}
